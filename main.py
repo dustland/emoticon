@@ -6,8 +6,8 @@ import re
 from pkg.platform.types import message as platform_message
 from pkg.provider import entities as llm_entities
 
-@register(name="Ai表情包", description="让大模型学会发表情包", version="0.1", author="小馄饨")
-class EmoticonPlugin(BasePlugin):
+@register(name="Emoticon", description="Send emotion images", version="0.1", author="小馄饨")
+class Emoticon(BasePlugin):
 
     def __init__(self, host: APIHost):
         super().__init__(host)
